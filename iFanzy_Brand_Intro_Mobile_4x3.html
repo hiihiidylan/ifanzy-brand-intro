@@ -790,6 +790,320 @@ body[data-lang="en"] .pain-page .pain-points {
 body[data-lang="zh"] .solve-page .solve-module h3 { font-size:clamp(23px,2.8cqw,29px); }
 body[data-lang="zh"] .solve-page .solve-module p { font-size:clamp(16px,2cqw,20px); }
 
+/* Creator authorization: large editorial title with stacked comparison modules. */
+.authorization-page .content {
+  padding:clamp(64px,9vh,108px) clamp(46px,7vh,96px) clamp(58px,8vh,96px);
+  transform:none !important;
+}
+.authorization-page .authorization-layout {
+  display:grid;
+  grid-template-columns:.82fr 1.18fr;
+  align-items:center;
+  gap:clamp(38px,4.8vw,66px);
+  width:100%;
+}
+.authorization-page .authorization-title {
+  margin:0;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  font-weight:900;
+  letter-spacing:0;
+  text-shadow:0 2px 40px rgba(0,0,0,.5);
+}
+.authorization-page .authorization-title span {
+  display:block;
+  white-space:nowrap;
+}
+.authorization-page .authorization-title.en {
+  font-size:clamp(43px,7.1vh,68px);
+  line-height:.98;
+}
+.authorization-page .authorization-title.zh {
+  font-size:clamp(67px,11.16vh,106px);
+  line-height:1.03;
+}
+.authorization-page .authorization-title .yellow {
+  color:var(--yellow);
+  text-shadow:0 0 34px rgba(255,198,26,.28);
+}
+.authorization-page .authorization-modules {
+  display:grid;
+  grid-template-columns:1fr;
+  gap:clamp(18px,2.3vh,26px);
+}
+.authorization-page .authorization-module {
+  position:relative;
+  min-height:clamp(235px,29vh,274px);
+  overflow:hidden;
+  border:1.5px solid rgba(255,198,26,.25);
+  border-radius:10px;
+  padding:clamp(25px,3.2vh,34px) clamp(30px,3.8vw,46px);
+  background:
+    linear-gradient(135deg,rgba(255,198,26,.12),rgba(255,255,255,.035) 58%,rgba(255,198,26,.045)),
+    radial-gradient(circle at 0% 0%,rgba(255,198,26,.18),transparent 46%);
+  box-shadow:0 20px 72px rgba(0,0,0,.5),0 0 0 1px rgba(255,198,26,.1) inset;
+  backdrop-filter:blur(24px) saturate(170%);
+}
+.authorization-page .authorization-module.primary {
+  border-color:rgba(255,198,26,.48);
+  background:
+    linear-gradient(135deg,rgba(255,198,26,.2),rgba(255,255,255,.045) 58%,rgba(255,198,26,.08)),
+    radial-gradient(circle at 0% 0%,rgba(255,198,26,.28),transparent 48%);
+  box-shadow:0 20px 72px rgba(0,0,0,.5),0 0 0 1px rgba(255,198,26,.18) inset,0 0 44px rgba(255,198,26,.1);
+}
+.authorization-page .authorization-module:before {
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(120deg,rgba(255,255,255,.14),transparent 38%,rgba(255,198,26,.08));
+  opacity:.72;
+  pointer-events:none;
+}
+.authorization-page .authorization-module h3,
+.authorization-page .authorization-module p {
+  position:relative;
+  z-index:1;
+}
+.authorization-page .authorization-module h3 {
+  margin:0 0 clamp(20px,2.5vh,28px);
+  color:var(--yellow);
+  font-size:clamp(34px,4.7cqw,44px);
+  line-height:1;
+  font-weight:900;
+  letter-spacing:0;
+}
+.authorization-page .authorization-module p {
+  display:flex;
+  flex-direction:column;
+  gap:clamp(9px,1.2vh,13px);
+  color:#fff;
+  font-size:clamp(19px,2.45cqw,23px);
+  line-height:1.15;
+  font-weight:650;
+}
+.authorization-page .authorization-module p span { display:block; }
+body[data-lang="zh"] .authorization-page .authorization-module h3 {
+  margin-bottom:clamp(16px,2vh,22px);
+  font-size:clamp(46px,6.24cqw,58px);
+  line-height:1.02;
+}
+body[data-lang="zh"] .authorization-page .authorization-module p {
+  font-size:clamp(21px,2.7cqw,25px);
+  line-height:1.18;
+}
+body[data-lang="zh"] .authorization-page .authorization-module {
+  min-height:clamp(215px,26vh,246px);
+  padding-top:clamp(22px,2.8vh,30px);
+  padding-bottom:clamp(22px,2.8vh,30px);
+}
+
+/* Product capabilities: eight compact modules in one readable column. */
+.capabilities-page .content {
+  padding:clamp(64px,9vh,108px) clamp(46px,7vh,96px) clamp(58px,8vh,96px);
+  transform:none !important;
+}
+.capabilities-page .capabilities-layout {
+  display:grid;
+  grid-template-columns:.72fr 1.28fr;
+  align-items:center;
+  gap:clamp(34px,4.3vw,58px);
+  width:100%;
+}
+.capabilities-page .capabilities-title {
+  margin:0;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  font-weight:900;
+  letter-spacing:0;
+  text-shadow:0 2px 40px rgba(0,0,0,.5);
+}
+.capabilities-page .capabilities-title span {
+  display:block;
+  white-space:nowrap;
+}
+.capabilities-page .capabilities-title.en {
+  font-size:clamp(43px,7vh,67px);
+  line-height:.99;
+}
+.capabilities-page .capabilities-title.zh {
+  font-size:clamp(53px,8.8vh,83px);
+  line-height:1.03;
+}
+.capabilities-page .capabilities-title .yellow {
+  color:var(--yellow);
+  text-shadow:0 0 34px rgba(255,198,26,.28);
+}
+.capabilities-page .capability-modules {
+  display:grid;
+  grid-template-columns:1fr;
+  gap:clamp(7px,.9vh,10px);
+}
+.capabilities-page .capability-module {
+  position:relative;
+  min-height:clamp(58px,7.1vh,68px);
+  display:grid;
+  grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);
+  align-items:center;
+  gap:clamp(16px,2vw,26px);
+  overflow:hidden;
+  border:1.5px solid rgba(255,198,26,.25);
+  border-radius:10px;
+  padding:clamp(9px,1.1vh,12px) clamp(18px,2.3vw,28px);
+  background:
+    linear-gradient(135deg,rgba(255,198,26,.12),rgba(255,255,255,.035) 58%,rgba(255,198,26,.045)),
+    radial-gradient(circle at 0% 0%,rgba(255,198,26,.18),transparent 46%);
+  box-shadow:0 20px 72px rgba(0,0,0,.5),0 0 0 1px rgba(255,198,26,.1) inset;
+  backdrop-filter:blur(24px) saturate(170%);
+}
+.capabilities-page .capability-module:before {
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(120deg,rgba(255,255,255,.14),transparent 38%,rgba(255,198,26,.08));
+  opacity:.72;
+  pointer-events:none;
+}
+.capabilities-page .capability-module h3,
+.capabilities-page .capability-module p {
+  position:relative;
+  z-index:1;
+}
+.capabilities-page .capability-module h3 {
+  margin:0;
+  color:var(--yellow);
+  font-size:clamp(21px,2.55cqw,27px);
+  line-height:1.04;
+  font-weight:900;
+  letter-spacing:0;
+}
+.capabilities-page .capability-module p {
+  color:#fff !important;
+  font-size:clamp(15px,1.85cqw,19px);
+  line-height:1.18;
+  font-weight:650;
+}
+body[data-lang="zh"] .capabilities-page .capability-module h3 {
+  font-size:clamp(26px,3.1cqw,32px);
+  line-height:1.06;
+}
+body[data-lang="zh"] .capabilities-page .capability-module p {
+  font-size:clamp(18px,2.25cqw,22px);
+  line-height:1.2;
+}
+body[data-lang="zh"] .capabilities-page .capability-module {
+  min-height:clamp(64px,7.8vh,74px);
+  padding-top:clamp(10px,1.25vh,14px);
+  padding-bottom:clamp(10px,1.25vh,14px);
+}
+
+/* Fan experience: follow the product-capabilities layout and module language. */
+.fan-experience-page .content {
+  padding:clamp(64px,9vh,108px) clamp(46px,7vh,96px) clamp(58px,8vh,96px);
+  transform:none !important;
+}
+.fan-experience-page .fan-experience-layout {
+  display:grid;
+  grid-template-columns:.72fr 1.28fr;
+  align-items:center;
+  gap:clamp(34px,4.3vw,58px);
+  width:100%;
+}
+.fan-experience-page .fan-experience-title {
+  margin:0;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  font-weight:900;
+  letter-spacing:0;
+  text-shadow:0 2px 40px rgba(0,0,0,.5);
+}
+.fan-experience-page .fan-experience-title span {
+  display:block;
+  white-space:nowrap;
+}
+.fan-experience-page .fan-experience-title.en {
+  font-size:clamp(43px,7vh,67px);
+  line-height:.99;
+}
+.fan-experience-page .fan-experience-title.zh {
+  font-size:clamp(53px,8.8vh,83px);
+  line-height:1.03;
+}
+.fan-experience-page .fan-experience-title .yellow {
+  color:var(--yellow);
+  text-shadow:0 0 34px rgba(255,198,26,.28);
+}
+.fan-experience-page .fan-experience-modules {
+  display:grid;
+  grid-template-columns:1fr;
+  gap:clamp(8px,1vh,11px);
+}
+.fan-experience-page .fan-experience-module {
+  position:relative;
+  min-height:clamp(64px,7.8vh,74px);
+  display:grid;
+  grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);
+  align-items:center;
+  gap:clamp(16px,2vw,26px);
+  overflow:hidden;
+  border:1.5px solid rgba(255,198,26,.25);
+  border-radius:10px;
+  padding:clamp(10px,1.25vh,14px) clamp(18px,2.3vw,28px);
+  background:
+    linear-gradient(135deg,rgba(255,198,26,.12),rgba(255,255,255,.035) 58%,rgba(255,198,26,.045)),
+    radial-gradient(circle at 0% 0%,rgba(255,198,26,.18),transparent 46%);
+  box-shadow:0 20px 72px rgba(0,0,0,.5),0 0 0 1px rgba(255,198,26,.1) inset;
+  backdrop-filter:blur(24px) saturate(170%);
+}
+.fan-experience-page .fan-experience-module:before {
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(120deg,rgba(255,255,255,.14),transparent 38%,rgba(255,198,26,.08));
+  opacity:.72;
+  pointer-events:none;
+}
+.fan-experience-page .fan-experience-module h3,
+.fan-experience-page .fan-experience-module p {
+  position:relative;
+  z-index:1;
+}
+.fan-experience-page .fan-experience-module h3 {
+  margin:0;
+  color:var(--yellow);
+  font-size:clamp(21px,2.55cqw,27px);
+  line-height:1.04;
+  font-weight:900;
+  letter-spacing:0;
+}
+.fan-experience-page .fan-experience-module p {
+  color:#fff !important;
+  font-size:clamp(15px,1.85cqw,19px);
+  line-height:1.18;
+  font-weight:650;
+}
+body[data-lang="en"] .fan-experience-page .fan-experience-module {
+  grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);
+  column-gap:clamp(26px,3vw,36px);
+}
+.fan-experience-page .fan-experience-module p.en,
+.fan-experience-page .fan-experience-module p.zh {
+  color:#fff !important;
+}
+.fan-experience-page .fan-experience-module:last-child h3.en {
+  font-size:clamp(17px,2.05cqw,21px);
+}
+body[data-lang="zh"] .fan-experience-page .fan-experience-module h3 {
+  font-size:clamp(26px,3.1cqw,32px);
+  line-height:1.06;
+}
+body[data-lang="zh"] .fan-experience-page .fan-experience-module p {
+  font-size:clamp(18px,2.25cqw,22px);
+  line-height:1.2;
+}
+
 /* 4:3 fit pass: keep dense mobile-derived pages inside the fixed canvas. */
 .slide:nth-of-type(3) .content { transform:scale(.98); transform-origin:center; }
 .slide:nth-of-type(6) .content { transform:scale(.82); transform-origin:center; }
@@ -839,6 +1153,59 @@ p {
   font-size:clamp(20px,2.2vw,26px); color:var(--gray);
   margin-top:clamp(24px,3vh,36px); max-width:clamp(600px,60vw,920px);
   line-height:1.5; letter-spacing:-.015em;
+}
+
+/* Creator dashboard */
+.creator-dashboard-page .dashboard-layout {
+  display:grid;
+  grid-template-columns:.85fr 1.15fr;
+  gap:clamp(40px,5vw,72px);
+  align-items:center;
+  width:100%;
+}
+.creator-dashboard-page .dashboard-copy {
+  min-width:0;
+}
+.creator-dashboard-page .dashboard-title {
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  margin:0 0 clamp(16px,2vh,24px);
+  font-weight:900;
+  letter-spacing:0;
+  text-shadow:0 2px 40px rgba(0,0,0,.5);
+}
+.creator-dashboard-page .dashboard-title span {
+  display:block;
+  white-space:nowrap;
+}
+.creator-dashboard-page .dashboard-title.en {
+  font-size:clamp(53px,7.2vh,72px);
+  line-height:.96;
+}
+.creator-dashboard-page .dashboard-title.zh {
+  font-size:clamp(64px,8.7vh,86px);
+  line-height:1.01;
+}
+.creator-dashboard-page .dashboard-description {
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  margin:clamp(20px,2.5vh,28px) 0 0;
+  color:#fff;
+  letter-spacing:0;
+}
+.creator-dashboard-page .dashboard-description span {
+  display:block;
+  white-space:nowrap;
+}
+.creator-dashboard-page .dashboard-description.en {
+  font-size:clamp(19px,2.05vw,23px);
+  line-height:1.42;
+}
+.creator-dashboard-page .dashboard-description.zh {
+  font-size:clamp(22px,2.35vw,27px);
+  line-height:1.42;
 }
 
 /* Layout grids */
@@ -1271,59 +1638,35 @@ p {
 </section>
 
 <!-- Slide 7: Why Creator Authorization Matters -->
-<section class="slide">
+<section class="slide authorization-page" id="creator-authorization">
 <div class="content">
-  <div style="display:grid;grid-template-columns:.62fr 1.38fr;gap:clamp(40px,5vw,72px);align-items:center;width:100%">
-    <!-- Left: Title -->
+  <div class="authorization-layout">
     <div>
-      <div class="kicker en">WHY CREATOR AUTHORIZATION MATTERS</div>
-      <div class="kicker zh">為什麼必須是真人授權</div>
-      <h2 class="en" style="font-size:clamp(30px,3.6vw,54px)">
-        Trust Begins with <span class="yellow">Authorization</span>
+      <h2 class="authorization-title en">
+        <span>Why Real</span>
+        <span>Creator</span>
+        <span class="yellow">Authorization</span>
+        <span class="yellow">Matters</span>
       </h2>
-      <h2 class="zh" style="font-size:clamp(32px,3.8vw,56px)">
-        信任始於<span class="yellow">授權</span>
+      <h2 class="authorization-title zh">
+        <span>為什麼</span>
+        <span>必須是</span>
+        <span class="yellow">真人</span>
+        <span class="yellow">授權</span>
       </h2>
     </div>
-    <!-- Right: 2 Modules comparison -->
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,2.5vw,32px);text-align:center;padding-top:clamp(20px,2.5vh,28px)">
-      <div style="border:1px solid rgba(255,100,100,.35);background:linear-gradient(135deg, rgba(20,20,20,.95) 0%, rgba(25,20,20,.92) 100%);border-radius:clamp(24px,3vw,32px);padding:clamp(38px,4.5vw,50px) clamp(28px,3.4vw,40px) clamp(36px,4.2vw,46px);backdrop-filter:blur(32px);position:relative;box-shadow:0 8px 32px rgba(255,60,60,.15),0 0 0 1px rgba(255,100,100,.1) inset">
-        <div style="position:absolute;top:-16px;left:50%;transform:translateX(-50%);padding:8px 20px;background:linear-gradient(135deg, rgba(40,15,15,.98), rgba(35,12,12,.95));border:1.5px solid rgba(255,100,100,.45);border-radius:999px;font-size:clamp(17px,1.8vw,22px);font-weight:800;color:#ff9999;letter-spacing:.1em;text-transform:uppercase;backdrop-filter:blur(20px);box-shadow:0 4px 16px rgba(255,60,60,.2);line-height:1.5;white-space:nowrap">
-          <span class="en">WITHOUT AUTH</span>
-          <span class="zh">没有授權</span>
-        </div>
-        <div style="width:clamp(52px,6vw,64px);height:clamp(52px,6vw,64px);border-radius:clamp(14px,2vw,18px);background:linear-gradient(135deg, rgba(255,100,100,.15), rgba(255,80,80,.08));border:2px solid rgba(255,100,100,.4);display:grid;place-items:center;margin:clamp(28px,3.4vh,36px) auto clamp(28px,3.4vh,36px);color:#ff9999;font-size:clamp(30px,3.6vw,40px);font-weight:900;box-shadow:0 0 32px rgba(255,80,80,.15),0 1px 0 rgba(255,100,100,.2) inset">
-          <span style="display:block;line-height:1">×</span>
-        </div>
-        <div class="list" style="text-align:left;gap:clamp(13px,1.6vh,18px);margin-top:0">
-          <div class="item en" style="color:#ffb8b8;font-size:clamp(17px,1.8vw,22px)"><span class="mark" style="color:#ff9999;font-size:clamp(18px,1.9vw,23px)">⚠</span> Fake AI</div>
-          <div class="item zh" style="color:#ffb8b8;font-size:clamp(17px,1.8vw,22px)"><span class="mark" style="color:#ff9999;font-size:clamp(18px,1.9vw,23px)">⚠</span> 虚假 AI</div>
-          <div class="item en" style="color:#ffb8b8;font-size:clamp(17px,1.8vw,22px)"><span class="mark" style="color:#ff9999;font-size:clamp(18px,1.9vw,23px)">⚠</span> Deepfake Risks</div>
-          <div class="item zh" style="color:#ffb8b8;font-size:clamp(17px,1.8vw,22px)"><span class="mark" style="color:#ff9999;font-size:clamp(18px,1.9vw,23px)">⚠</span> Deepfake 風險</div>
-          <div class="item en" style="color:#ffb8b8;font-size:clamp(17px,1.8vw,22px)"><span class="mark" style="color:#ff9999;font-size:clamp(18px,1.9vw,23px)">⚠</span> Identity Theft</div>
-          <div class="item zh" style="color:#ffb8b8;font-size:clamp(17px,1.8vw,22px)"><span class="mark" style="color:#ff9999;font-size:clamp(18px,1.9vw,23px)">⚠</span> 身份盜用</div>
-          <div class="item en" style="color:#ffb8b8;font-size:clamp(17px,1.8vw,22px)"><span class="mark" style="color:#ff9999;font-size:clamp(18px,1.9vw,23px)">⚠</span> Untrustworthy Experience</div>
-          <div class="item zh" style="color:#ffb8b8;font-size:clamp(14px,1.5vw,18px)"><span class="mark" style="color:#ff9999;font-size:clamp(17px,1.8vw,22px)">⚠</span> 不可信體驗</div>
-        </div>
+    <div class="authorization-modules">
+      <div class="authorization-module primary">
+        <h3 class="en">WITH iFANZY</h3>
+        <h3 class="zh">使用 iFanzy</h3>
+        <p class="en"><span>Verified creator identity</span><span>AI authorized by the creator</span><span>Every interaction has a trusted source</span></p>
+        <p class="zh"><span>真實創作者身份驗證</span><span>AI 由創作者親自授權</span><span>每次互動都有可信來源</span></p>
       </div>
-      <div style="border:1.5px solid rgba(255,198,26,.5);background:linear-gradient(135deg, rgba(30,28,20,.95) 0%, rgba(28,26,18,.92) 100%);border-radius:clamp(24px,3vw,32px);padding:clamp(38px,4.5vw,50px) clamp(28px,3.4vw,40px) clamp(36px,4.2vw,46px);backdrop-filter:blur(32px);position:relative;box-shadow:0 12px 48px rgba(255,198,26,.25),0 0 0 1px rgba(255,198,26,.15) inset,0 0 60px rgba(255,198,26,.1)">
-        <div style="position:absolute;top:-16px;left:50%;transform:translateX(-50%);padding:8px 20px;background:linear-gradient(135deg, rgba(255,198,26,.95), rgba(255,210,60,.9));border:1.5px solid rgba(255,198,26,.8);border-radius:999px;font-size:clamp(14px,1.5vw,18px);font-weight:900;color:#1a1a1a;letter-spacing:.1em;text-transform:uppercase;backdrop-filter:blur(20px);box-shadow:0 4px 20px rgba(255,198,26,.4),0 0 30px rgba(255,198,26,.2);white-space:nowrap">
-          <span class="en">WITH iFANZY</span>
-          <span class="zh">使用 iFanzy</span>
-        </div>
-        <div style="width:clamp(52px,6vw,64px);height:clamp(52px,6vw,64px);border-radius:clamp(14px,2vw,18px);background:linear-gradient(135deg, rgba(255,198,26,.2), rgba(255,198,26,.1));border:2px solid rgba(255,198,26,.5);display:grid;place-items:center;margin:clamp(30px,3.6vh,40px) auto clamp(30px,3.6vh,40px);color:var(--yellow);font-size:clamp(30px,3.6vw,40px);font-weight:900;box-shadow:0 0 40px rgba(255,198,26,.25),0 1px 0 rgba(255,255,255,.15) inset">
-          <span style="display:block;line-height:1">✓</span>
-        </div>
-        <div class="list" style="text-align:left;gap:clamp(15px,1.9vh,22px);margin-top:0">
-          <div class="item en" style="font-size:clamp(17px,1.8vw,22px)"><span class="mark" style="font-size:clamp(18px,1.9vw,23px)">✓</span> Verified Creators</div>
-          <div class="item zh" style="font-size:clamp(17px,1.8vw,22px)"><span class="mark" style="font-size:clamp(18px,1.9vw,23px)">✓</span> 已驗證創作者</div>
-          <div class="item en" style="font-size:clamp(17px,1.8vw,22px)"><span class="mark" style="font-size:clamp(18px,1.9vw,23px)">✓</span> Creator-Authorized AI</div>
-          <div class="item zh" style="font-size:clamp(17px,1.8vw,22px)"><span class="mark" style="font-size:clamp(18px,1.9vw,23px)">✓</span> 創作者授權 AI</div>
-          <div class="item en" style="font-size:clamp(17px,1.8vw,22px)"><span class="mark" style="font-size:clamp(18px,1.9vw,23px)">✓</span> Trusted Interactions</div>
-          <div class="item zh" style="font-size:clamp(17px,1.8vw,22px)"><span class="mark" style="font-size:clamp(18px,1.9vw,23px)">✓</span> 可信互動</div>
-          <div class="item en" style="font-size:clamp(17px,1.8vw,22px)"><span class="mark" style="font-size:clamp(18px,1.9vw,23px)">✓</span> Sustainable Creator Business</div>
-          <div class="item zh" style="font-size:clamp(17px,1.8vw,22px)"><span class="mark" style="font-size:clamp(18px,1.9vw,23px)">✓</span> 長期創作者生意</div>
-        </div>
+      <div class="authorization-module">
+        <h3 class="en">WITHOUT AUTHORIZATION</h3>
+        <h3 class="zh">沒有授權</h3>
+        <p class="en"><span>Identity can be misused</span><span>Deepfake risk goes unchecked</span><span>Fans cannot verify authenticity</span></p>
+        <p class="zh"><span>身份可能被冒用</span><span>Deepfake 風險無法受控</span><span>粉絲無法確認真實性</span></p>
       </div>
     </div>
   </div>
@@ -1331,105 +1674,69 @@ p {
 </section>
 
 <!-- Slide 8: Product Capabilities -->
-<section class="slide">
+<section class="slide capabilities-page" id="product-capabilities">
 <div class="content">
-  <div style="display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(36px,4.5vw,64px);align-items:center;width:100%">
-    <!-- Left: Title -->
+  <div class="capabilities-layout">
     <div>
       <div class="kicker en">PRODUCT CAPABILITIES</div>
       <div class="kicker zh">產品能力</div>
-      <h2 class="en" style="font-size:clamp(28px,3.3vw,50px)">
-        A Complete AI Creator<br/>
-        <span class="yellow">Monetization Platform</span>
+      <h2 class="capabilities-title en">
+        <span>A Complete</span>
+        <span class="yellow">AI Creator</span>
+        <span class="yellow">Monetization</span>
+        <span>Platform</span>
       </h2>
-      <h2 class="zh" style="font-size:clamp(30px,3.5vw,52px)">
-        一套完整的<br/>
-        <span class="yellow">AI 創作者變現平台</span>
+      <h2 class="capabilities-title zh">
+        <span>一套完整的</span>
+        <span class="yellow">AI 創作者</span>
+        <span class="yellow">變現平台</span>
       </h2>
     </div>
-    <!-- Right: 8 Cards in 2 columns -->
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,2vw,24px)">
-      <div class="card" style="margin:0;min-height:auto;padding:clamp(20px,2.4vw,28px) clamp(16px,2vw,24px)">
-        <div style="width:42px;height:42px;border-radius:10px;background:linear-gradient(135deg, rgba(255,198,26,.2), rgba(255,198,26,.08));border:1px solid rgba(255,198,26,.4);display:grid;place-items:center;margin:0 auto clamp(12px,1.5vh,16px);color:var(--yellow);font-size:18px;font-weight:900">AI</div>
-        <h3 class="en" style="font-size:clamp(17px,1.8vw,23px);margin-bottom:clamp(10px,1.3vh,14px)">AI Twin</h3>
-        <h3 class="zh" style="font-size:clamp(17px,1.8vw,23px);margin-bottom:clamp(10px,1.3vh,14px)">AI 分身</h3>
-        <p class="en" style="font-size:clamp(13px,1.4vw,16px);line-height:1.5">Create creator-authorized AI digital twins</p>
-        <p class="zh" style="font-size:clamp(13px,1.4vw,16px);line-height:1.5">創建由創作者本人授權的 AI 數位分身</p>
-      </div>
-      <div class="card" style="margin:0;min-height:auto;padding:clamp(20px,2.4vw,28px) clamp(16px,2vw,24px)">
-        <div style="width:42px;height:42px;border-radius:10px;background:linear-gradient(135deg, rgba(255,198,26,.2), rgba(255,198,26,.08));border:1px solid rgba(255,198,26,.4);display:grid;place-items:center;margin:0 auto clamp(12px,1.5vh,16px);color:var(--yellow);font-size:18px;font-weight:900">📹</div>
-        <h3 class="en" style="font-size:clamp(17px,1.8vw,23px);margin-bottom:clamp(10px,1.3vh,14px)">Live Studio</h3>
-        <h3 class="zh" style="font-size:clamp(17px,1.8vw,23px);margin-bottom:clamp(10px,1.3vh,14px)">直播工作室</h3>
-        <p class="en" style="font-size:clamp(13px,1.4vw,16px);line-height:1.5">Launch AI-powered livestreams anytime</p>
-        <p class="zh" style="font-size:clamp(13px,1.4vw,16px);line-height:1.5">隨時開啟 AI 驅動的直播互動</p>
-      </div>
-      <div class="card" style="margin:0;min-height:auto;padding:clamp(20px,2.4vw,28px) clamp(16px,2vw,24px)">
-        <div style="width:42px;height:42px;border-radius:10px;background:linear-gradient(135deg, rgba(255,198,26,.2), rgba(255,198,26,.08));border:1px solid rgba(255,198,26,.4);display:grid;place-items:center;margin:0 auto clamp(12px,1.5vh,16px);color:var(--yellow);font-size:18px;font-weight:900">⇄</div>
-        <h3 class="en" style="font-size:clamp(17px,1.8vw,23px);margin-bottom:clamp(10px,1.3vh,14px)">Human/AI Mode</h3>
-        <h3 class="zh" style="font-size:clamp(17px,1.8vw,23px);margin-bottom:clamp(10px,1.3vh,14px)">真人/AI 模式</h3>
-        <p class="en" style="font-size:clamp(13px,1.4vw,16px);line-height:1.5">Switch freely between creator and AI twin</p>
-        <p class="zh" style="font-size:clamp(13px,1.4vw,16px);line-height:1.5">在真人本人和 AI 分身之間自由切換</p>
-      </div>
-      <div class="card" style="margin:0;min-height:auto;padding:clamp(20px,2.4vw,28px) clamp(16px,2vw,24px)">
-        <div style="width:42px;height:42px;border-radius:10px;background:linear-gradient(135deg, rgba(255,198,26,.2), rgba(255,198,26,.08));border:1px solid rgba(255,198,26,.4);display:grid;place-items:center;margin:0 auto clamp(12px,1.5vh,16px);color:var(--yellow);font-size:18px;font-weight:900">📁</div>
-        <h3 class="en" style="font-size:clamp(17px,1.8vw,23px);margin-bottom:clamp(10px,1.3vh,14px)">Content Management</h3>
-        <h3 class="zh" style="font-size:clamp(17px,1.8vw,23px);margin-bottom:clamp(10px,1.3vh,14px)">內容管理</h3>
-        <p class="en" style="font-size:clamp(13px,1.4vw,16px);line-height:1.5">Manage posts, premium content and AI assets</p>
-        <p class="zh" style="font-size:clamp(13px,1.4vw,16px);line-height:1.5">管理貼文、付費內容和 AI 資產</p>
-      </div>
-      <div class="card" style="margin:0;min-height:auto;padding:clamp(20px,2.4vw,28px) clamp(16px,2vw,24px)">
-        <div style="width:42px;height:42px;border-radius:10px;background:linear-gradient(135deg, rgba(255,198,26,.2), rgba(255,198,26,.08));border:1px solid rgba(255,198,26,.4);display:grid;place-items:center;margin:0 auto clamp(12px,1.5vh,16px);color:var(--yellow);font-size:18px;font-weight:900">💰</div>
-        <h3 class="en" style="font-size:clamp(17px,1.8vw,23px);margin-bottom:clamp(10px,1.3vh,14px)">Monetization</h3>
-        <h3 class="zh" style="font-size:clamp(17px,1.8vw,23px);margin-bottom:clamp(10px,1.3vh,14px)">變現能力</h3>
-        <p class="en" style="font-size:clamp(13px,1.4vw,16px);line-height:1.5">Subscriptions, tips, PPV, AI Live and more</p>
-        <p class="zh" style="font-size:clamp(13px,1.4vw,16px);line-height:1.5">支持訂閱、打賞、付費內容、AI 直播等多種變現</p>
-      </div>
-      <div class="card" style="margin:0;min-height:auto;padding:clamp(20px,2.4vw,28px) clamp(16px,2vw,24px)">
-        <div style="width:42px;height:42px;border-radius:10px;background:linear-gradient(135deg, rgba(255,198,26,.2), rgba(255,198,26,.08));border:1px solid rgba(255,198,26,.4);display:grid;place-items:center;margin:0 auto clamp(12px,1.5vh,16px);color:var(--yellow);font-size:18px;font-weight:900">👛</div>
-        <h3 class="en" style="font-size:clamp(17px,1.8vw,23px);margin-bottom:clamp(10px,1.3vh,14px)">Wallet</h3>
-        <h3 class="zh" style="font-size:clamp(17px,1.8vw,23px);margin-bottom:clamp(10px,1.3vh,14px)">錢包</h3>
-        <p class="en" style="font-size:clamp(13px,1.4vw,16px);line-height:1.5">Track revenue and secure withdrawals</p>
-        <p class="zh" style="font-size:clamp(13px,1.4vw,16px);line-height:1.5">追蹤收入，並安全提現</p>
-      </div>
-      <div class="card" style="margin:0;min-height:auto;padding:clamp(20px,2.4vw,28px) clamp(16px,2vw,24px)">
-        <div style="width:42px;height:42px;border-radius:10px;background:linear-gradient(135deg, rgba(255,198,26,.2), rgba(255,198,26,.08));border:1px solid rgba(255,198,26,.4);display:grid;place-items:center;margin:0 auto clamp(12px,1.5vh,16px);color:var(--yellow);font-size:18px;font-weight:900">📊</div>
-        <h3 class="en" style="font-size:clamp(17px,1.8vw,23px);margin-bottom:clamp(10px,1.3vh,14px)">Analytics</h3>
-        <h3 class="zh" style="font-size:clamp(17px,1.8vw,23px);margin-bottom:clamp(10px,1.3vh,14px)">數據分析</h3>
-        <p class="en" style="font-size:clamp(13px,1.4vw,16px);line-height:1.5">Understand fan behavior and optimize growth</p>
-        <p class="zh" style="font-size:clamp(13px,1.4vw,16px);line-height:1.5">了解粉絲行為，優化增長策略</p>
-      </div>
-      <div class="card" style="margin:0;min-height:auto;padding:clamp(20px,2.4vw,28px) clamp(16px,2vw,24px)">
-        <div style="width:42px;height:42px;border-radius:10px;background:linear-gradient(135deg, rgba(255,198,26,.2), rgba(255,198,26,.08));border:1px solid rgba(255,198,26,.4);display:grid;place-items:center;margin:0 auto clamp(12px,1.5vh,16px);color:var(--yellow);font-size:18px;font-weight:900">⚙</div>
-        <h3 class="en" style="font-size:clamp(17px,1.8vw,23px);margin-bottom:clamp(10px,1.3vh,14px)">Creator Dashboard</h3>
-        <h3 class="zh" style="font-size:clamp(17px,1.8vw,23px);margin-bottom:clamp(10px,1.3vh,14px)">創作者後台</h3>
-        <p class="en" style="font-size:clamp(13px,1.4vw,16px);line-height:1.5">One dashboard to manage the entire creator business</p>
-        <p class="zh" style="font-size:clamp(13px,1.4vw,16px);line-height:1.5">一個後台，管理整個創作者生意</p>
-      </div>
+    <div class="capability-modules">
+      <div class="capability-module"><h3 class="en">AI Twin</h3><h3 class="zh">AI 分身</h3><p class="en">Create creator-authorized AI digital twins</p><p class="zh">創建由創作者本人授權的 AI 數位分身</p></div>
+      <div class="capability-module"><h3 class="en">Live Studio</h3><h3 class="zh">直播工作室</h3><p class="en">Launch AI-powered livestreams anytime</p><p class="zh">隨時開啟 AI 驅動的直播互動</p></div>
+      <div class="capability-module"><h3 class="en">Human / AI Mode</h3><h3 class="zh">真人 / AI 模式</h3><p class="en">Switch freely between creator and AI twin</p><p class="zh">在真人本人和 AI 分身之間自由切換</p></div>
+      <div class="capability-module"><h3 class="en">Content Management</h3><h3 class="zh">內容管理</h3><p class="en">Manage posts, premium content and AI assets</p><p class="zh">管理貼文、付費內容和 AI 資產</p></div>
+      <div class="capability-module"><h3 class="en">Monetization</h3><h3 class="zh">變現能力</h3><p class="en">Subscriptions, tips, PPV, AI Live and more</p><p class="zh">支持訂閱、打賞、付費內容、AI 直播等多種變現</p></div>
+      <div class="capability-module"><h3 class="en">Wallet</h3><h3 class="zh">錢包</h3><p class="en">Track revenue and secure withdrawals</p><p class="zh">追蹤收入，並安全提現</p></div>
+      <div class="capability-module"><h3 class="en">Analytics</h3><h3 class="zh">數據分析</h3><p class="en">Understand fan behavior and optimize growth</p><p class="zh">了解粉絲行為，優化增長策略</p></div>
+      <div class="capability-module"><h3 class="en">Creator Dashboard</h3><h3 class="zh">創作者後台</h3><p class="en">One dashboard to manage the entire creator business</p><p class="zh">一個後台，管理整個創作者生意</p></div>
     </div>
   </div>
 </div>
 </section>
 
 <!-- Slide 9: Creator Dashboard -->
-<section class="slide">
+<section class="slide creator-dashboard-page">
 <div class="content">
-  <div style="display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(40px,5vw,72px);align-items:center;width:100%">
-    <div>
+  <div class="dashboard-layout">
+    <div class="dashboard-copy">
       <div class="kicker en">CREATOR DASHBOARD</div>
       <div class="kicker zh">創作者後台</div>
-      <h2 class="en" style="font-size:clamp(30px,3.6vw,54px);margin-bottom:clamp(16px,2vh,24px)">
-        One Dashboard<br/>
-        <span class="yellow">One Creator Business</span>
+      <h2 class="dashboard-title en">
+        <span>One</span>
+        <span>Dashboard</span>
+        <span class="yellow">One Creator</span>
+        <span class="yellow">Business</span>
       </h2>
-      <h2 class="zh" style="font-size:clamp(32px,3.8vw,56px);margin-bottom:clamp(16px,2vh,24px)">
-        一個後台<br/>
-        <span class="yellow">管理整個創作者生意</span>
+      <h2 class="dashboard-title zh">
+        <span>一個後台</span>
+        <span class="yellow">管理整個</span>
+        <span class="yellow">創作者生意</span>
       </h2>
-      <p class="en" style="font-size:clamp(16px,1.7vw,20px);color:var(--gray);margin:clamp(20px,2.5vh,28px) 0 0;line-height:1.6">
-        Dashboard, wallet, analytics, content, subscription settings and AI status — all visible from one integrated workspace
+      <p class="dashboard-description en">
+        <span>Dashboard, wallet, analytics, content</span>
+        <span>subscription settings</span>
+        <span>AI status</span>
+        <span>all visible from</span>
+        <span>one integrated workspace</span>
       </p>
-      <p class="zh" style="font-size:clamp(16px,1.7vw,20px);color:var(--gray);margin:clamp(20px,2.5vh,28px) 0 0;line-height:1.6">
-        收入、錢包、數據、內容、訂閱設置和 AI 在線狀態，都在一個工作區內完成管理
+      <p class="dashboard-description zh">
+        <span>收入、錢包、數據、內容</span>
+        <span>訂閱設置</span>
+        <span>AI 在線狀態</span>
+        <span>都在一個工作區內</span>
+        <span>完成管理</span>
       </p>
     </div>
   <div style="width:100%;border-radius:clamp(12px,1.5vw,20px);overflow:hidden;box-shadow:0 24px 72px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.08);position:relative;background:linear-gradient(135deg, rgba(255,198,26,.03), rgba(255,198,26,.01))">
@@ -1441,87 +1748,34 @@ p {
 </section>
 
 <!-- Slide 10: Fan Experience -->
-<section class="slide">
+<section class="slide fan-experience-page">
 <div class="content">
-  <div style="display:grid;grid-template-columns:.7fr 1.3fr;gap:clamp(36px,4.5vw,64px);align-items:center;width:100%">
-    <!-- Left: Title -->
+  <div class="fan-experience-layout">
     <div>
       <div class="kicker en">FAN EXPERIENCE</div>
       <div class="kicker zh">粉絲體驗</div>
-      <h2 class="en" style="font-size:clamp(28px,3.3vw,50px)">
-        From Browsing Content<br/>
-        to <span class="yellow">Long-Term Companionship</span>
+      <h2 class="fan-experience-title en">
+        <span>From</span>
+        <span>Browsing</span>
+        <span>Content</span>
+        <span class="yellow">to Long-Term</span>
+        <span class="yellow">Companionship</span>
       </h2>
-      <h2 class="zh" style="font-size:clamp(30px,3.5vw,52px)">
-        從瀏覽內容<br/>
-        到<span class="yellow">長期陪伴</span>
+      <h2 class="fan-experience-title zh">
+        <span>從瀏覽</span>
+        <span>內容</span>
+        <span class="yellow">到長期</span>
+        <span class="yellow">陪伴</span>
       </h2>
     </div>
-    <!-- Right: 7 Cards in 1 column -->
-    <div style="display:flex;flex-direction:column;gap:clamp(10px,1.3vh,16px)">
-      <div style="border:1px solid rgba(255,255,255,.14);background:linear-gradient(135deg, rgba(255,255,255,.09) 0%, rgba(255,255,255,.03) 100%);border-radius:clamp(14px,1.8vw,20px);padding:clamp(16px,2vw,22px) clamp(20px,2.4vw,28px);backdrop-filter:blur(28px);box-shadow:0 8px 32px rgba(0,0,0,.4);display:flex;align-items:center;gap:clamp(16px,2vw,22px)">
-        <div style="flex-shrink:0;width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg, rgba(255,198,26,.2), rgba(255,198,26,.08));border:1px solid rgba(255,198,26,.4);display:grid;place-items:center;color:var(--yellow);font-size:19px;font-weight:900">1</div>
-        <div>
-          <h3 class="en" style="font-size:clamp(17px,1.8vw,22px);margin-bottom:clamp(4px,.6vh,7px)">Browse Content</h3>
-          <h3 class="zh" style="font-size:clamp(17px,1.8vw,22px);margin-bottom:clamp(4px,.6vh,7px)">瀏覽內容</h3>
-          <p class="en" style="font-size:clamp(13px,1.4vw,16px);line-height:1.5;color:#b0b0b0">Fans discover creator profile and content</p>
-          <p class="zh" style="font-size:clamp(13px,1.4vw,16px);line-height:1.5;color:#b0b0b0">粉絲發現創作者主頁與內容</p>
-        </div>
-      </div>
-      <div style="border:1px solid rgba(255,255,255,.14);background:linear-gradient(135deg, rgba(255,255,255,.09) 0%, rgba(255,255,255,.03) 100%);border-radius:clamp(14px,1.8vw,20px);padding:clamp(16px,2vw,22px) clamp(20px,2.4vw,28px);backdrop-filter:blur(28px);box-shadow:0 8px 32px rgba(0,0,0,.4);display:flex;align-items:center;gap:clamp(16px,2vw,22px)">
-        <div style="flex-shrink:0;width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg, rgba(255,198,26,.2), rgba(255,198,26,.08));border:1px solid rgba(255,198,26,.4);display:grid;place-items:center;color:var(--yellow);font-size:19px;font-weight:900">2</div>
-        <div>
-          <h3 class="en" style="font-size:clamp(17px,1.8vw,22px);margin-bottom:clamp(4px,.6vh,7px)">Subscribe</h3>
-          <h3 class="zh" style="font-size:clamp(17px,1.8vw,22px);margin-bottom:clamp(4px,.6vh,7px)">訂閱</h3>
-          <p class="en" style="font-size:clamp(13px,1.4vw,16px);line-height:1.5;color:#b0b0b0">Fans unlock deeper access</p>
-          <p class="zh" style="font-size:clamp(13px,1.4vw,16px);line-height:1.5;color:#b0b0b0">粉絲解鎖更深層訪問權限</p>
-        </div>
-      </div>
-      <div style="border:1px solid rgba(255,255,255,.14);background:linear-gradient(135deg, rgba(255,255,255,.09) 0%, rgba(255,255,255,.03) 100%);border-radius:clamp(14px,1.8vw,20px);padding:clamp(16px,2vw,22px) clamp(20px,2.4vw,28px);backdrop-filter:blur(28px);box-shadow:0 8px 32px rgba(0,0,0,.4);display:flex;align-items:center;gap:clamp(16px,2vw,22px)">
-        <div style="flex-shrink:0;width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg, rgba(255,198,26,.2), rgba(255,198,26,.08));border:1px solid rgba(255,198,26,.4);display:grid;place-items:center;color:var(--yellow);font-size:19px;font-weight:900">3</div>
-        <div>
-          <h3 class="en" style="font-size:clamp(17px,1.8vw,22px);margin-bottom:clamp(4px,.6vh,7px)">Chat</h3>
-          <h3 class="zh" style="font-size:clamp(17px,1.8vw,22px);margin-bottom:clamp(4px,.6vh,7px)">聊天</h3>
-          <p class="en" style="font-size:clamp(13px,1.4vw,16px);line-height:1.5;color:#b0b0b0">AI keeps relationships actively engaged</p>
-          <p class="zh" style="font-size:clamp(13px,1.4vw,16px);line-height:1.5;color:#b0b0b0">AI 保持關係持續活躍</p>
-        </div>
-      </div>
-      <div style="border:1px solid rgba(255,255,255,.14);background:linear-gradient(135deg, rgba(255,255,255,.09) 0%, rgba(255,255,255,.03) 100%);border-radius:clamp(14px,1.8vw,20px);padding:clamp(16px,2vw,22px) clamp(20px,2.4vw,28px);backdrop-filter:blur(28px);box-shadow:0 8px 32px rgba(0,0,0,.4);display:flex;align-items:center;gap:clamp(16px,2vw,22px)">
-        <div style="flex-shrink:0;width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg, rgba(255,198,26,.2), rgba(255,198,26,.08));border:1px solid rgba(255,198,26,.4);display:grid;place-items:center;color:var(--yellow);font-size:19px;font-weight:900">4</div>
-        <div>
-          <h3 class="en" style="font-size:clamp(17px,1.8vw,22px);margin-bottom:clamp(4px,.6vh,7px)">PPV Unlock</h3>
-          <h3 class="zh" style="font-size:clamp(17px,1.8vw,22px);margin-bottom:clamp(4px,.6vh,7px)">PPV 付費解鎖</h3>
-          <p class="en" style="font-size:clamp(13px,1.4vw,16px);line-height:1.5;color:#b0b0b0">Premium content creates new consumption scenarios</p>
-          <p class="zh" style="font-size:clamp(13px,1.4vw,16px);line-height:1.5;color:#b0b0b0">付費內容創造新的消費場景</p>
-        </div>
-      </div>
-      <div style="border:1px solid rgba(255,255,255,.14);background:linear-gradient(135deg, rgba(255,255,255,.09) 0%, rgba(255,255,255,.03) 100%);border-radius:clamp(14px,1.8vw,20px);padding:clamp(16px,2vw,22px) clamp(20px,2.4vw,28px);backdrop-filter:blur(28px);box-shadow:0 8px 32px rgba(0,0,0,.4);display:flex;align-items:center;gap:clamp(16px,2vw,22px)">
-        <div style="flex-shrink:0;width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg, rgba(255,198,26,.2), rgba(255,198,26,.08));border:1px solid rgba(255,198,26,.4);display:grid;place-items:center;color:var(--yellow);font-size:19px;font-weight:900">5</div>
-        <div>
-          <h3 class="en" style="font-size:clamp(17px,1.8vw,22px);margin-bottom:clamp(4px,.6vh,7px)">AI Custom Content</h3>
-          <h3 class="zh" style="font-size:clamp(17px,1.8vw,22px);margin-bottom:clamp(4px,.6vh,7px)">AI 定製內容</h3>
-          <p class="en" style="font-size:clamp(13px,1.4vw,16px);line-height:1.5;color:#b0b0b0">Personalized AI content increases fan value</p>
-          <p class="zh" style="font-size:clamp(13px,1.4vw,16px);line-height:1.5;color:#b0b0b0">個人化 AI 內容提升粉絲價值</p>
-        </div>
-      </div>
-      <div style="border:1px solid rgba(255,255,255,.14);background:linear-gradient(135deg, rgba(255,255,255,.09) 0%, rgba(255,255,255,.03) 100%);border-radius:clamp(14px,1.8vw,20px);padding:clamp(16px,2vw,22px) clamp(20px,2.4vw,28px);backdrop-filter:blur(28px);box-shadow:0 8px 32px rgba(0,0,0,.4);display:flex;align-items:center;gap:clamp(16px,2vw,22px)">
-        <div style="flex-shrink:0;width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg, rgba(255,198,26,.2), rgba(255,198,26,.08));border:1px solid rgba(255,198,26,.4);display:grid;place-items:center;color:var(--yellow);font-size:19px;font-weight:900">6</div>
-        <div>
-          <h3 class="en" style="font-size:clamp(17px,1.8vw,22px);margin-bottom:clamp(4px,.6vh,7px)">AI Live</h3>
-          <h3 class="zh" style="font-size:clamp(17px,1.8vw,22px);margin-bottom:clamp(4px,.6vh,7px)">AI 直播</h3>
-          <p class="en" style="font-size:clamp(13px,1.4vw,16px);line-height:1.5;color:#b0b0b0">Live interactions available anytime</p>
-          <p class="zh" style="font-size:clamp(13px,1.4vw,16px);line-height:1.5;color:#b0b0b0">直播互動變得隨時可用</p>
-        </div>
-      </div>
-      <div style="border:1.5px solid rgba(255,198,26,.5);background:linear-gradient(135deg, rgba(255,198,26,.12) 0%, rgba(255,198,26,.04) 100%);border-radius:clamp(14px,1.8vw,20px);padding:clamp(16px,2vw,22px) clamp(20px,2.4vw,28px);backdrop-filter:blur(28px);box-shadow:0 12px 48px rgba(255,198,26,.25),0 0 0 1px rgba(255,198,26,.15) inset,0 0 60px rgba(255,198,26,.1);display:flex;align-items:center;gap:clamp(16px,2vw,22px)">
-        <div style="flex-shrink:0;width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg, rgba(255,198,26,.3), rgba(255,198,26,.15));border:1px solid rgba(255,198,26,.6);display:grid;place-items:center;color:var(--yellow);font-size:19px;font-weight:900;box-shadow:0 0 20px rgba(255,198,26,.3)">7</div>
-        <div>
-          <h3 class="en" style="font-size:clamp(17px,1.8vw,22px);margin-bottom:clamp(4px,.6vh,7px);color:var(--yellow)">Long-Term Companionship</h3>
-          <h3 class="zh" style="font-size:clamp(17px,1.8vw,22px);margin-bottom:clamp(4px,.6vh,7px);color:var(--yellow)">長期陪伴</h3>
-          <p class="en" style="font-size:clamp(13px,1.4vw,16px);line-height:1.5;color:#e0d0a0">Fans form long-term connection and companionship</p>
-          <p class="zh" style="font-size:clamp(13px,1.4vw,16px);line-height:1.5;color:#e0d0a0">粉絲形成長期連結與陪伴感</p>
-        </div>
-      </div>
+    <div class="fan-experience-modules">
+      <div class="fan-experience-module"><h3 class="en">Browse Content</h3><h3 class="zh">瀏覽內容</h3><p class="en">Fans discover creator profiles and content</p><p class="zh">粉絲發現創作者主頁與內容</p></div>
+      <div class="fan-experience-module"><h3 class="en">Subscribe</h3><h3 class="zh">訂閱</h3><p class="en">Fans unlock deeper access</p><p class="zh">粉絲解鎖更深層的專屬體驗</p></div>
+      <div class="fan-experience-module"><h3 class="en">Chat</h3><h3 class="zh">聊天</h3><p class="en">AI keeps relationships actively engaged</p><p class="zh">AI 讓互動與關係持續活躍</p></div>
+      <div class="fan-experience-module"><h3 class="en">PPV Unlock</h3><h3 class="zh">PPV 付費解鎖</h3><p class="en">Premium content creates new experiences</p><p class="zh">付費內容創造新的消費體驗</p></div>
+      <div class="fan-experience-module"><h3 class="en">AI Custom Content</h3><h3 class="zh">AI 定製內容</h3><p class="en">Personalized content increases fan value</p><p class="zh">個人化內容持續提升粉絲價值</p></div>
+      <div class="fan-experience-module"><h3 class="en">AI Live</h3><h3 class="zh">AI 直播</h3><p class="en">Live interaction is available anytime</p><p class="zh">直播互動隨時都能發生</p></div>
+      <div class="fan-experience-module"><h3 class="en">Long-Term Companionship</h3><h3 class="zh">長期陪伴</h3><p class="en">Fans build lasting connection and companionship</p><p class="zh">粉絲建立長期連結與陪伴感</p></div>
     </div>
   </div>
 </div>
