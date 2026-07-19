@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>iFanzy Preview</title>
+<style>
+* { box-sizing:border-box; }
+html, body { margin:0; min-height:100%; background:#050505; color:#fff; font-family:Inter,-apple-system,BlinkMacSystemFont,"SF Pro Display","PingFang SC","Microsoft YaHei",sans-serif; }
+body { display:grid; grid-template-rows:auto 1fr; }
+.bar {
+  height:48px; display:flex; align-items:center; gap:14px; padding:0 18px;
+  border-bottom:1px solid rgba(255,255,255,.12); background:rgba(10,10,10,.94);
+}
+.brand { color:#ffc61a; font-weight:900; }
+.link { color:#b4b4b4; text-decoration:none; font-size:14px; }
+.link.active { color:#ffc61a; }
+.stage { min-height:calc(100vh - 48px); display:grid; place-items:center; overflow:hidden; }
+iframe { width:100%; height:calc(100vh - 48px); border:0; background:#0a0a0a; }
+</style>
+</head>
+<body>
+<nav class="bar">
+  <div class="brand">iFanzy Preview</div>
+  <a class="link active" href="iFanzy_Brand_Intro_Mobile_4x3.html" target="preview">Brand Intro 4:3</a>
+  <a class="link" href="iFanzy_Brand_Intro_Mobile.html" target="preview">Mobile Original</a>
+</nav>
+<main class="stage">
+  <iframe name="preview" src="iFanzy_Brand_Intro_Mobile_4x3.html" title="iFanzy Brand Intro 4:3 Preview"></iframe>
+</main>
+</body>
+</html>
